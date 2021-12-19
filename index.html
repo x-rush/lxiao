@@ -1,0 +1,459 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport"
+			content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="css/index.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/style.css">
+		<link href='css/onepage-scroll.css' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div class="over"></div>
+		<!--背景层-->
+		<img id="loading" src="img/loading.png" style="width: 100%;height: 100%;" />
+
+		<div id="tab1">
+			<section class="tab1-sec">
+				<img src="img/first/wenben.png" style="width: 100%;height: 100%;position: absolute;bottom: 15%; z-index: 2;" />
+				<img src="img/first/wave.png" style="width: 100%;height: 100%;position: absolute;" />
+				<img src="img/first.png" style="width: 100%;height: 100%;" />
+				
+				<div id="audio_btn" class="rotate">
+					<audio loop src="media/hailang.mp3" id="media" autoplay="" preload=""></audio>
+				</div>
+			</section>
+			<section class="tab1-sec">
+				<img src="img/first/1-2.png" style="width: 100%;height: 94%;" />
+				<div class="logoImg amplifyImg">
+					<div>
+						<img src="img/first/01laluz.png" />
+						<audio loop preload src="media/first/01laluz.mp3"></audio>
+					</div>
+					<div>
+						<img src="img/first/02bombon.png" />
+						<audio loop preload src="media/first/02iamnot.mp3"></audio>
+					</div>
+					<div>
+						<img src="img/first/03daddy.png" />
+						<audio loop preload src="media/first/03daddy.mp3"></audio>
+					</div>
+					<div>
+						<img src="img/first/04tijuana.png" />
+						<audio loop preload src="media/first/04Tijuana.mp3"></audio>
+					</div>
+					<div>
+						<img src="img/first/05feb.png" />
+						<audio loop preload src="media/first/05Gutter.mp3"></audio>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div id="tab2">
+			<section class="tab2-sec">
+				<img src="img/second.png" style="width: 100%;height: 94%;" />
+			</section>
+			<section class="tab2-sec">
+				<img src="img/second/sec-text.png" style="width: 100%;height: 94%;" />
+				<div style="position: absolute;top: 425px;">
+					<video x5-playsinline='true'playsinline='true'webkit-playsinline='true'width="100%" height="240px" controls="controls" id="video1">
+					  <source src="media/second/2-2.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+					</video>
+				</div>
+			</section>
+			<section class="tab2-sec">
+				<img src="img/second/thi-text.png" style="width: 100%;height: 94%;" />
+				<div style="position: absolute;top: 103px;">
+					<video x5-playsinline='true'playsinline='true'webkit-playsinline='true'width="100%" height="240px" controls="controls" id="video2">
+					  <source src="media/second/2-3.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+					</video>
+				</div>
+			</section>
+		</div>
+
+		<div id="tab3">
+			<section class="tab3-sec">
+				<img id="thi1" src="img/third/thi1.gif" style="position: absolute;top: 42px;height: 211px;left: -40px;" />
+				<div id="inp-range" style="position: absolute;top: 48px;left: 88px;z-index: 100;">
+					<div class="progress"></div>
+					<input id="value-input" type="range" max="60" value="15" style="position: absolute;bottom: 67px;left: 22px;background-color: transparent;">
+				</div>
+				<img src="img/third.png" style="width: 100%;height: 94%;" />
+				<img id="thi2" src="img/third/thi2.gif" style="position: absolute; height: 211px; left: -40px;top: 42px;" />
+				<div id="thi3_btn">
+					<audio loop src="media/third/thi_bg.mp3" id="thi_bg" autoplay="" preload=""></audio>
+				</div>
+			</section>
+			<section class="tab3-sec">
+				<img src="img/third/thi-bg.png" style="width: 100%;height: 94%;" />
+				<div class="thi-img" style="top: 32px;opacity: 0;">
+					<img src="img/third/life.png" style="width: 120px;height: 120px;"/>
+					<audio loop preload src="media/third/life.mp3"></audio>
+				</div>
+				<div class="thi-img" style="top: 190px;opacity: 0;">
+					<img src="img/third/boy.png" style="width: 120px;height: 120px;"/>
+					<audio loop preload src="media/third/boy.mp3"></audio>
+				</div>
+				<div class="thi-img" style="top: 345px;opacity: 0;">
+					<img src="img/third/huixing.png" style="width: 120px;height: 120px;"/>
+					<audio loop preload src="media/third/huixing.mp3"></audio>
+				</div>
+			</section>
+		</div>
+
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item mui-active tab1">
+				<span class="mui-icon mui-icon-spinner-cycle mui-spin"></span>
+				<span class="mui-tab-label">trend</span>
+			</a>
+			<a class="mui-tab-item tab2">
+				<span class="mui-icon mui-icon-spinner-cycle mui-spin"></span>
+				<span class="mui-tab-label">focus</span>
+			</a>
+			<a class="mui-tab-item tab3">
+				<span class="mui-icon mui-icon-spinner-cycle mui-spin"></span>
+				<span class="mui-tab-label">buzz</span>
+			</a>
+		</nav>
+
+		<script src="js/mui.min.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src='js/circle-progress.js'></script>
+		<script type="text/javascript" src="js/jquery.onepage-scroll.min.js"></script>
+		<script>
+			var x = document.getElementById("media");
+			var thi_bg = document.getElementById("thi_bg");
+			var video1 = document.getElementById("video1");
+			var video2 = document.getElementById("video2");
+			
+			$(function() {
+				$("#audio_btn").click(function() {
+					$(this).toggleClass("rotate"); //控制音乐图标 自转或暂停
+
+					//控制背景音乐 播放或暂停           
+					if ($(this).hasClass("rotate")) {
+						x.play();
+					} else {
+						x.pause();
+					}
+				})
+			});
+
+			(function($) {
+				$('.mui-bar').hide();
+				$('#tab1,#tab2,#tab3').hide();
+				$('#thi2').hide();
+				$('#inp-range').hide();
+				setTimeout(function() {
+					$("#loading").hide();
+					$('#tab1').show();
+					$('.mui-bar').show();
+					$("#tab1").onepage_scroll({
+						sectionContainer: ".tab1-sec", // 指定单页面的每个页面外部容器
+						pagination: false, // 是否显示右边的导航圆形按钮
+						loop: false, // 当前页面为最后一个的时候，继续向下切换是否回到第一个页面
+						afterMove: function(index) {   // 页面切换之后的回调，index表示页面的索引
+							if(index == 1){
+								if ($("#audio_btn").hasClass("rotate")) {
+									x.play();
+								} else {
+									$("#audio_btn").trigger('click');
+								}
+							}else{
+								x.pause();
+							}
+						},
+					});
+				}, 3000);
+			})(jQuery);
+			
+			const MAX = 60
+			
+			const cp = new CircleProgress('.progress', {
+				max: MAX,
+				value: 15,
+				animationDuration: 400,
+				textFormat: (val) => val+'min',
+			});
+			
+			document.querySelector('#value-input').addEventListener('change', e => {
+				const val = e.target.value;
+				cp.value = val;
+				cp.el.style.setProperty('--progress-value', val / MAX);
+			})
+			
+			$('#thi1').on('click',function(){
+				if(thi_bg.paused){
+					$('#thi2').show();
+					$('#inp-range').show();
+					thi_bg.play();
+				}else{
+					$('#thi2').hide();
+					$('#inp-range').hide();
+					thi_bg.pause();
+				}
+			})
+			$('#thi2').on('click',function(){
+				if(thi_bg.played){
+					$('#thi2').hide();
+					$('#inp-range').hide();
+					thi_bg.pause();
+				}else{
+					$('#thi2').show();
+					$('#inp-range').show();
+					thi_bg.play();
+				}
+			})
+			
+			$('.tab1').on('click', function() {
+				video1.pause();
+				video2.pause();
+				thi_bg.pause();
+				$('#thi2').hide();
+				$('#inp-range').hide();
+				if ($("#audio_btn").hasClass("rotate")) {
+					x.play();
+				} else {
+					$("#audio_btn").trigger('click');
+				}
+				$('#tab1').show();
+				$('#tab2,#tab3').moveTo(1);
+				$('#tab2,#tab3').off('onepage_scroll');
+				$('#tab2,#tab3').hide();
+				$("#tab1").onepage_scroll({
+					sectionContainer: ".tab1-sec", // 指定单页面的每个页面外部容器
+					pagination: false, // 是否显示右边的导航圆形按钮
+					loop: false, // 当前页面为最后一个的时候，继续向下切换是否回到第一个页面
+					afterMove: function(index) {   // 页面切换之后的回调，index表示页面的索引
+						if(index == 1){
+							if ($("#audio_btn").hasClass("rotate")) {
+								x.play();
+							} else {
+								$("#audio_btn").trigger('click');
+							}
+						}else{
+							x.pause();
+						}
+					},
+				});
+			})
+			$('.tab2').on('click', function() {
+				video1.pause();
+				video2.pause();
+				thi_bg.pause();
+				x.pause();
+				$('#thi2').hide();
+				$('#inp-range').hide();
+				$('#tab1,#tab3').moveTo(1);
+				$('#tab1,#tab3').off('onepage_scroll');
+				$('#tab1,#tab3').hide();
+				$('#tab2').show();
+				$("#tab2").onepage_scroll({
+					sectionContainer: ".tab2-sec", // 指定单页面的每个页面外部容器
+					pagination: false, // 是否显示右边的导航圆形按钮
+					loop: false, // 当前页面为最后一个的时候，继续向下切换是否回到第一个页面
+					afterMove: function(index) {
+						console.log(index);
+						video1.pause();
+						video2.pause();
+						// if(index == 2) return false;
+					},
+					keyboard: true
+				});
+			})
+			$('.tab3').on('click', function() {
+				video1.pause();
+				video2.pause();
+				thi_bg.pause();
+				x.pause();
+				$('#thi2').hide();
+				$('#inp-range').hide();
+				$('#tab1,#tab2').moveTo(1);
+				$('#tab1,#tab2').off('onepage_scroll');
+				$('#tab1,#tab2').hide();
+				$('#tab3').show();
+				$("#tab3").onepage_scroll({
+					sectionContainer: ".tab3-sec", // 指定单页面的每个页面外部容器
+					pagination: false, // 是否显示右边的导航圆形按钮
+					loop: false, // 当前页面为最后一个的时候，继续向下切换是否回到第一个页面
+					afterMove: function(index) {
+						thi_bg.pause();
+						$('#thi2').hide();
+						$('#inp-range').hide();
+					},
+				});
+			})
+		</script>
+		<script>
+			$(document).ready(function() {
+				var imgsObj = $('.amplifyImg div img'); //需要放大的图像
+				if (imgsObj) {
+					$.each(imgsObj, function() {
+						$(this).click(function() {
+							var currImg = $(this);
+							var currMp3 = $(this).next();
+							currMp3[0].play();
+							coverLayer(1);
+							var tempContainer = $('<div class=tempContainer></div>'); //图片容器
+							with(tempContainer) { //width方法等同于$(this)
+								appendTo("body");
+								var windowWidth = $(window).width();
+								var windowHeight = $(window).height();
+								//获取图片原始宽度、高度
+								var orignImg = new Image();
+								orignImg.src = currImg.attr("src");
+								var currImgWidth = orignImg.width;
+								var currImgHeight = orignImg.height;
+								if (currImgWidth < windowWidth) { //为了让图片不失真，当图片宽度较小的时候，保留原图
+									if (currImgHeight < windowHeight) {
+										var topHeight = (windowHeight - currImgHeight) / 2;
+										if (topHeight > 35) {
+											/*此处为了使图片高度上居中显示在整个手机屏幕中：因为在android,ios的微信中会有一个title导航，35为title导航的高度*/
+											topHeight = topHeight - 35;
+											css('top', topHeight);
+										} else {
+											css('top', 0);
+										}
+										html('<img border=0 src=' + currImg.attr('src') + '>');
+									} else {
+										css('top', 0);
+										html('<img border=0 src=' + currImg.attr('src') +
+											' height=' + windowHeight + '>');
+									}
+								} else {
+									var currImgChangeHeight = (currImgHeight * windowWidth) /
+										currImgWidth;
+									if (currImgChangeHeight < windowHeight) {
+										var topHeight = (windowHeight - currImgChangeHeight) / 2;
+										if (topHeight > 35) {
+											topHeight = topHeight - 35;
+											css('top', topHeight);
+										} else {
+											css('top', 0);
+										}
+										html('<img border=0 src=' + currImg.attr('src') + ' width=' +
+											windowWidth + ';>');
+									} else {
+										css('top', 0);
+										html('<img border=0 src=' + currImg.attr('src') + ' width=' +
+											windowWidth + '; height=' + windowHeight + '>');
+									}
+								}
+
+							}
+							tempContainer.click(function() {
+								$(this).remove();
+								coverLayer(0);
+								currMp3[0].pause();
+							});
+						});
+					});
+				} else {
+					return false;
+				}
+				//使用禁用蒙层效果
+				function coverLayer(tag) {
+					with($('.over')) {
+						if (tag == 1) {
+							css('height', $(document).height());
+							css('display', 'block');
+							css('opacity', 1);
+							css("background-color", "#FFFFFF");
+							css("background-color", "rgba(0,0,0,0.7)"); //蒙层透明度
+						} else {
+							css('display', 'none');
+						}
+					}
+				}
+			});
+		</script>
+		<script>
+			$(document).ready(function() {
+				var imgsObj = $('.thi-img img'); //需要放大的图像
+				if (imgsObj) {
+					$.each(imgsObj, function() {
+						$(this).click(function() {
+							var currImg = $(this);
+							var currMp3 = $(this).next();
+							currMp3[0].play();
+							coverLayer(1);
+							var tempContainer = $('<div class=tempContainer></div>'); //图片容器
+							with(tempContainer) { //width方法等同于$(this)
+								appendTo("body");
+								var windowWidth = $(window).width();
+								var windowHeight = $(window).height();
+								//获取图片原始宽度、高度
+								var orignImg = new Image();
+								orignImg.src = currImg.attr("src");
+								var currImgWidth = orignImg.width;
+								var currImgHeight = orignImg.height;
+								if (currImgWidth < windowWidth) { //为了让图片不失真，当图片宽度较小的时候，保留原图
+									if (currImgHeight < windowHeight) {
+										var topHeight = (windowHeight - currImgHeight) / 2;
+										if (topHeight > 35) {
+											/*此处为了使图片高度上居中显示在整个手机屏幕中：因为在android,ios的微信中会有一个title导航，35为title导航的高度*/
+											topHeight = topHeight - 35;
+											css('top', topHeight);
+										} else {
+											css('top', 0);
+										}
+										html('<img border=0 src=' + currImg.attr('src') + '>');
+									} else {
+										css('top', 0);
+										html('<img border=0 src=' + currImg.attr('src') +
+											' height=' + windowHeight + '>');
+									}
+								} else {
+									var currImgChangeHeight = (currImgHeight * windowWidth) /
+										currImgWidth;
+									if (currImgChangeHeight < windowHeight) {
+										var topHeight = (windowHeight - currImgChangeHeight) / 2;
+										if (topHeight > 35) {
+											topHeight = topHeight - 35;
+											css('top', topHeight);
+										} else {
+											css('top', 0);
+										}
+										html('<img border=0 src=' + currImg.attr('src') + ' width=' +
+											windowWidth + ';>');
+									} else {
+										css('top', 0);
+										html('<img border=0 src=' + currImg.attr('src') + ' width=' +
+											windowWidth + '; height=' + windowHeight + '>');
+									}
+								}
+		
+							}
+							tempContainer.click(function() {
+								$(this).remove();
+								coverLayer(0);
+								currMp3[0].pause();
+							});
+						});
+					});
+				} else {
+					return false;
+				}
+				//使用禁用蒙层效果
+				function coverLayer(tag) {
+					with($('.over')) {
+						if (tag == 1) {
+							css('height', $(document).height());
+							css('display', 'block');
+							css('opacity', 1);
+							css("background-color", "#FFFFFF");
+							css("background-color", "rgba(0,0,0,0.7)"); //蒙层透明度
+						} else {
+							css('display', 'none');
+						}
+					}
+				}
+			});
+		</script>
+	</body>
+</html>

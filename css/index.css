@@ -1,0 +1,119 @@
+html body{
+	background-color: #FFFFFF;
+}
+html body{
+	margin: 0px;
+	padding: 0px;
+}
+#tab1{
+	height: 100%;
+	width: 100%;
+}
+#tab2{
+	height: 100%;
+	width: 100%;
+}
+#tab3{
+	height: 100%;
+	width: 100%;
+}
+.tab1-sec{
+	height: 100%;
+	width: 100%;
+}
+.tab2-sec{
+	height: 100%;
+	width: 100%;
+}
+.tab3-sec{
+	height: 100%;
+	width: 100%;
+}
+#audio_btn {
+     width: 45px;
+     height: 40px;
+     background-image: url(../img/mus_icon.png);
+     background-size: 100% 100%;
+	 background-repeat: no-repeat;
+	 position: absolute;
+	 top: 75%;
+	 z-index: 100;
+ }
+  
+ .rotate {
+    -webkit-animation: rotating 1.2s linear infinite;
+     -moz-animation: rotating 1.2s linear infinite;
+     -o-animation: rotating 1.2s linear infinite;
+     animation: rotating 1.2s linear infinite
+ }
+  
+ @-webkit-keyframes rotating {
+     from { -webkit-transform: rotate(0) }
+     to { -webkit-transform: rotate(360deg) }
+ }
+  
+ @keyframes rotating {
+     from { transform: rotate(0) }
+     to { transform: rotate(360deg) }
+ }
+ @-moz-keyframes rotating {
+     from { -moz-transform: rotate(0) }
+     to { -moz-transform: rotate(360deg) }
+ }
+
+ .over {position: fixed; left:0; top:0; width:100%; z-index:100;}
+ .tempContainer {position:fixed; width:100%; margin-right:0px; margin-left:0px; text-align:center; z-index:101;}
+.amplifyImg div img{
+	width: 100%;
+}
+.logoImg div:first-child{
+	position: absolute;
+	top: 180px;
+	width: 90px;
+	opacity: 0;
+	height: 300px;
+}
+.logoImg div:nth-child(2){
+	position: absolute;
+	top: 480px;
+	width: 90px;
+	opacity: 0;
+	height: 280px;
+}
+.logoImg div:nth-child(3){
+	position: absolute;
+	top: 180px;
+	width: 110px;
+	opacity: 0;
+	height: 580px;
+	left: 90px;
+}
+.logoImg div:nth-child(4){
+	position: absolute;
+	top: 180px;
+	width: 90px;
+	opacity: 0;
+	height: 410px;
+	right: 90px;
+}
+.logoImg div:nth-child(5){
+	position: absolute;
+	top: 180px;
+	width: 90px;
+	opacity: 0;
+	height: 410px;
+	right: 0;
+}
+
+.mui-bar-tab{
+	background-color: rgba(255,255,255,0.7);
+	border-radius: 27px;
+	margin-bottom: 22px;
+	width: 80%;
+	margin-left: 10%;
+}
+
+.thi-img{
+	position: absolute;
+	left: 25px;
+}
